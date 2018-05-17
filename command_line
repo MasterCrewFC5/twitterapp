@@ -1,0 +1,5 @@
+docker build -t creemson/application ./Docker/Symfony
+docker build -t creemson/data ./Docker/Data
+docker build -t creemson/apache_php ./Docker/ApachePHP
+
+docker ps -a
