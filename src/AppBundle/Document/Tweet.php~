@@ -1,0 +1,67 @@
+<?php
+
+namespace AppBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ */
+class Tweet
+{
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $created_at;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $text;
+
+    /**
+     * @MongoDB\Field(type="int")
+     */
+    protected $retweet_count;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $lang;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $user_screen_name;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $user_location;
+
+    /**
+     * @MongoDB\Field(type="int")
+     */
+    protected $user_followers_count;
+
+    /**
+     * @MongoDB\Field(type="int")
+     */
+    protected $user_friends_count;
+
+    /**
+     * @MongoDB\Field(type="int")
+     */
+    protected $user_statuses_count;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $user_lang;
+
+}
